@@ -88,4 +88,7 @@ else:
     csv = df.drop(columns=["_Mois"], errors="ignore").to_csv(index=False).encode("utf-8")
     st.download_button("Télécharger CSV", data=csv, file_name="achats.csv", mime="text/csv")
 
-st.markdown(\"\"\"\n---\n**Astuce mobile :** après déploiement sur Streamlit Cloud, ouvre l'URL sur ton smartphone et utilise **Ajouter à l'écran d'accueil** pour un accès rapide.\n\"\"\")    
+st.markdown("""
+---
+**Astuce mobile :** après déploiement sur Streamlit Cloud, ouvre l'URL sur ton smartphone et utilise **Ajouter à l'écran d'accueil** pour un accès rapide.
+""")
